@@ -12,6 +12,7 @@
 
 */
 
+/* Added in a html, body, footer, and address which I added in a background color to the first 3 and changed the font family of the body element. Then, I added in padding for top and bottom for the last 2 and I changed the alignment and the font's size and the actual font.  */
 
 /* Structural Styles */
 html {
@@ -37,24 +38,97 @@ address {
     padding-bottom: 10px;
 }
 
+/* Put in a h1 and h2 element with the actual font-weight to normal. */
+
 /* Heading Styles */
 h1 {
     font-weight: normal;
 }
 
+h2 {
+    font-weight: normal;
+}
+
+/* I fixed up the actual links to have them a different color for once I hover over them and visit them. Also, I removed the actual underlining of the links. Lastly, for the nav>ul I set the line style to none and changed the line height and font size. */
 
 /* Navigation Styles */
+nav>ul {
+    list-style-type: none;
+    line-height: 2em;
+    font-size: 0.9em;
+}
 
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: rgb(43, 59, 125);
+}
 
+nav a:hover,
+nav a:active {
+    color: rgb(212, 35, 35);
+}
 
+/* Changed the spacing for the actual article and changed a line in the article to have the first beginning letter of each word in that line be capital while the rest of the letters would be lower case. */
 
 /* Article Styles */
+article#tour_summary h1 {
+    font-size: 2.2em;
+    letter-spacing: 0.2em;
+}
 
+article#tour_summary p {
+    font-size: 1.1em;
+}
 
+article#tour_summary p:first-of-type::first-line {
+    font-size: 1.2em;
+    font-variant: small-caps;
+}
 
+/* For the aside styles the h1, h2, and paragraph of the aside had their font sizes changed for more spacing. While, the day 1-6 the color of the paragraph and headings were changed for each odd day it was like a light gray color and for the even day's the color was changed to a semi dark blue. */
 
 /* Aside Styles */
+aside#tour_itinerary h1 {
+    font-size: 1.2em;
+}
 
+aside#tour_itinerary h2 {
+    font-size: 0.9em;
+}
 
+aside#tour_itinerary p {
+    font-size: 0.8em;
+}
+
+aside p:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
+
+aside h2:nth-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
+
+aside p:nth-of-type(even) {
+    color: rgb(81, 95, 175);
+}
+
+aside h2:nth-of-type(even) {
+    color: rgb(81, 95, 175)
+}
+
+/* The blockquote in the passage had the background color changed to a light blue and the actual text color changed to a white while the opacity was set to 0.65 so that way the actual text was not bright and the padding was changed to seperate it from the actual passage. */
 
 /* Blockquote Styles */
+blockquote {
+    background-color: rgb(173, 189, 227);
+    color: rgb(255, 255, 255);
+    opacity: 0.65;
+}
+
+blockquote {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
