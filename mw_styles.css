@@ -114,7 +114,7 @@ aside p:nth-of-type(even) {
 }
 
 aside h2:nth-of-type(even) {
-    color: rgb(81, 95, 175)
+    color: rgb(81, 95, 175);
 }
 
 /* The blockquote in the passage had the background color changed to a light blue and the actual text color changed to a white while the opacity was set to 0.65 so that way the actual text was not bright and the padding was changed to seperate it from the actual passage. */
